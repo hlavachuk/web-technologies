@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Останні новини</title>
+</head>
+<body>
+
+    <!-- Шапка сайту -->
+    <header style="border: 1px solid black; padding: 10px; margin-bottom: 10px;">
+        <h1>Останні новини</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Новини</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Основний блок із використанням display: flex -->
+    <div style="display: flex; gap: 10px; margin-bottom: 10px;">
+        
+        <!-- Основний контент (3 новини) -->
+        <main style="flex: 2; display: flex; flex-direction: column; gap: 10px;">
+            <article style="border: 1px solid black; padding: 10px;">
+                <h2>Відкрито новий кампус університету</h2>
+                <time datetime="2026-09-01">1 вересня 2026</time>
+                <p>У нашому університеті відбулося урочисте відкриття нового сучасного навчального кампусу. Будівля оснащена новітніми лабораторіями, просторими лекторіями та зонами відпочинку для студентів. Навчальний процес стане ще більш якісним та інтерактивним.</p>
+                <p>Автор: <strong>Ірина Коваль</strong></p>
+            </article>
+
+            <article style="border: 1px solid black; padding: 10px;">
+                <h2>Стартував конкурс студентських проєктів</h2>
+                <time datetime="2026-09-05">5 вересня 2026</time>
+                <p>Оголошено початок щорічного конкурсу інноваційних студентських розробок та стартапів. Для участі необхідно подати заявку та опис вашої ідеї до кінця місяця. Переможці отримають фінансування на реалізацію проєкту.</p>
+                <p>Автор: <strong>Олег Петренко</strong></p>
+            </article>
+
+            <article style="border: 1px solid black; padding: 10px;">
+                <h2>Результати літньої практики</h2>
+                <time datetime="2026-09-10">10 вересня 2026</time>
+                <p>Студенти успішно завершили літню виробничу практику у партнерських IT-компаніях. Більшість учасників продемонстрували високий рівень підготовки та отримали схвальні відгуки від керівників. Деякі студенти отримали пропозиції роботи.</p>
+                <p>Автор: <strong>Марія Шевчук</strong></p>
+            </article>
+        </main>
+
+        <!-- Бічна панель -->
+        <aside style="flex: 1; border: 1px solid black; padding: 10px;">
+            <h3>Популярне</h3>
+            <ul>
+                <li><a href="#">Новина 1</a></li>
+                <li><a href="#">Новина 2</a></li>
+                <li><a href="#">Новина 3</a></li>
+                <li><a href="#">Новина 4</a></li>
+            </ul>
+        </aside>
+
+    </div>
+
+    <hr>
+
+    <!-- Підвал сайту -->
+    <footer style="border: 1px solid black; padding: 10px; text-align: center;">
+        <p>&copy; 2026 Останні новини &middot; Іван Петренко, гр. КН-21 &middot; <a href="mailto:ivan.petrenko@example.com">ivan.petrenko@example.com</a></p>
+    </footer>
+
+</body>
+</html>
