@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Web technologies practice: basic HTML tags</title>
+</head>
+<body>
+  <header></header>
+  <main>
+    <form action="questionnaire.html" method="post" enctype="multipart/form-data" style="margin-top: 20px;">
+    <fieldset>
+        <legend><p>Особисті дані</p></legend>
+
+        <p>
+            <label for="username">Ім'я та Прізвище:</label><br>
+            <input type="text" id="username" name="username" placeholder="Введіть ваше ім'я та прізвище" value="Главачук Богдан">
+
+        </p>
+        <p>
+            <label for="birthday">Дата народження:</label><br>
+            <input type="date" id="birthday" name="birthday" value="2007-12-21">
+        </p>
+        <p>
+            <label for ="userpassword">Пароль (6 символів; 1 загальна; 1 мала; 1 цифра):</label><br>
+            <input type="password" id="userpassword" name="userpassword" placeholder="Введіть пароль" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Пароль повинен містити принаймні одну цифру, одну велику літеру та одну малу літеру.">
+        </p>
+    </fieldset>
+     <br>    
+    <fieldset >
+        <legend> <p> Контактна інформація </p> </legend>
+
+        <p>
+        <label for="useremail">Електронна пошта</label><br>
+        <input type="email" id="useremail" name="useremail" value="hlavachuk_b@gmail.com" placeholder="example@gmail.com" autocomplete="off" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"  required tabindex="4"><br>
+        </p>
+
+        <p>
+        <label for="userphone">Номер телефону</label><br>
+        <input type="tel" id="userphone" name="userphone" value="380956292453" placeholder="+380XXXXXXXXX" required tabindex="5"><br>
+        </p>
+
+        <p>
+            <label for="city_input">Місто</label><br>
+            <input type="text" id="city_input" name="city_input" list="city_list" placeholder="Введіть місто" required tabindex="6"><br>
+            <datalist id="city_list">
+                <option value="Львів"></option>
+                <option value="Чернівці"></option>
+                <option value="Одеса"></option>
+                <option value="Харків"></option>
+                <option value="Дніпро"></option>
+            </datalist>
+        </p>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend> <p> Пеоеваги та опитування</p> </legend>
+
+        <p>
+        <label>Рівень освіти</label><br
+        <label><input type="radio" name="education" value="middle" tabindex="7"> Середня</lable><br>
+        <lable><input type="radio" name="education" value="bachelor" tabindex="8"> Бакалавр</lable><br>
+        <lable><input type="radio" name="education" value="master" tabindex="9"> Магістр</lable><br>
+        </p>
+
+        <p>
+        <label>Зайнятість</label><br
+        <lable><input type="radio" name="employment" value="fulltime" tabindex="10"> Повна зайнятість</lable><br>
+        <lable><input type="radio" name="employment" value="student" tabindex="11" checked> Студент</lable><br>
+        <lable><input type="radio" name="employment" value="freelancer" tabindex="12"> Фріланс</lable><br>
+        </p>
+
+        <p>
+            <label>Ваші хобі(оберіть декілька)</label><br
+            <lable><input type="checkbox" name="hobby" value="sports" tabindex="13"> Спорт</lable><br>
+            <lable><input type="checkbox" name="hobby" value="music" tabindex="14"> Музика</lable><br>
+            <lable><input type="checkbox" name="hobby" value="reading" tabindex="15"> Читання</lable><br>
+            <label><input type="checkbox" name="hobby" value="travel" tabindex="16"> Подорожі</label>
+        </p>
+        <p>
+            <label>Досвіт у веб розробці</label><br>
+            <select name="experience" id="experience" tabindex="17"><br>
+                <option value="beginner" selected>Початківець</option>
+                <option value="intermediate">Середній</option>
+                <option value="advanced">Досвідчений</option>
+            </select>
+        </p>
+
+        <p>
+            <label>Знання мов програмування(множинний вибір затисніть Ctrl)</label><br>
+            <select name="programming_languages" id="programming_languages" multiple size="3" tabindex="18">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="speciality">Спеціальність</label>
+            <select name="speciality" id="speciality" tabindex="19">
+                <optgroup label="Комп'ютерні науки">
+                    <option value="computer_science">Комп'ютерні науки</option>
+                    <option value="software_engineering">Програмна інженерія</option>
+                </optgroup>
+                <optgroup label="Веб-розробка та технології">
+                    <option value="web_development">Веб-розробка</option>
+                    <option value="web_design">Веб-дизайн</option>
+                </optgroup>
+                <optgroup label=" Кібербезпека та мережі">
+                    <option value="networking">Мережі</option>
+                    <option value="cybersecurity">Кібербезпека</option>
+                </optgroup>
+                <optgroup label="IT-інженерія">
+                    <option value="it_engineering">IT-інженерія</option>
+                    <option value="data_science">Наука про дані</option>
+                </optgroup>
+            </select>
+        </p>
+
+    </fieldset>
+
+    <fieldset>
+
+<legend><p>Додаткові матеріали</p></legend>
+
+        <p>
+            <label for="audio_files">Завантажити ваші аудіофайли</label><br>
+            <input type="file" id="audio_files" name="audio_files" accept="audio/*" tabindex="20"><br>
+        </p>
+
+        <p>
+            <label for="about_me">Додаткова інформація про себе</label><br>
+            <textarea id="about_me" name="about_me" rows="4" cols="50" placeholder="Введіть ваші додаткові відомості..." tabindex="21"></textarea><br>
+        </p>
+
+       
+
+    </fieldset>
+    <br>
+
+    <p align="center">
+        <button type="submit"  tabindex="22">Надіслати анкету</button>
+        <button type="reset"  tabindex="23">Очистити форму</button>
+    </p>
+    </form>
+  </main>
+  <footer></footer>
+</body>
+</html>
