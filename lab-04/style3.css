@@ -1,0 +1,29 @@
+a {
+    color: purple;
+}
+
+.main-link {
+    color: green;
+}
+
+ul li ul {
+    list-style-type: none;
+    padding-left: 15px;
+}
+
+.vegetables-list {
+    list-style-type: "✓ ";
+}
+
+.berries-list {
+    list-style-type: square;
+}
+
+.berries-list a {
+    text-decoration: none;
+}
+
+ol {
+    list-style-position: inside;
+    padding-left: 0;
+}
