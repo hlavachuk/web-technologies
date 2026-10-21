@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* ---------- 1. box-sizing ---------- */
+.box {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    padding: 20px;
+    border: 5px solid #1b4f72;
+    background-color: #d6eaf8;
+    margin: 20px;
+}
+
+.content-box {
+    box-sizing: content-box;
+
+}
+
+.border-box {
+    box-sizing: border-box;
+    
+}
+
+.overflow-section {
+    padding-bottom: 120px;
+}
+
+.overflow-box {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    max-height: 80px;
+    margin: 20px;
+    border: 2px solid #7d3c98;
+    background-color: #ebdef0;
+}
+
+.overflow-visible {
+    overflow: visible;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.overflow-scroll {
+    overflow: scroll;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #154360;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #2471a3;
+}
+
+.menu .hidden {
+    display: none;
+}

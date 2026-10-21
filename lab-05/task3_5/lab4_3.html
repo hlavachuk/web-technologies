@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Анкета</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header></header>
+<main>
+  <header><a href="../index.html">Повернутись на головну</a></header>
+  <form action="questionnaire.html" method="post" enctype="multipart/form-data">
+    <fieldset>
+      <legend>Особисті дані</legend>
+
+      <p>
+        <label for="username">Ім'я та Прізвище:</label><br>
+        <input type="text" id="username" name="username" placeholder="Введіть ваше ім'я та прізвище" value="Главачук Богдан">
+      </p>
+      <p>
+        <label for="birthday">Дата народження:</label><br>
+        <input type="date" id="birthday" name="birthday" value="2007-12-21">
+      </p>
+      <p>
+        <label for="userpassword">Пароль (6 символів; 1 велика; 1 мала; 1 цифра):</label><br>
+        <input type="password" id="userpassword" name="userpassword" placeholder="Введіть пароль" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Пароль повинен містити принаймні одну цифру, одну велику літеру та одну малу літеру.">
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Контактна інформація</legend>
+
+      <p>
+        <label for="useremail">Електронна пошта</label><br>
+        <input type="email" id="useremail" name="useremail" value="hlavachuk_b@gmail.com" placeholder="example@gmail.com" autocomplete="off" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required tabindex="4">
+      </p>
+      <p>
+        <label for="userphone">Номер телефону</label><br>
+        <input type="tel" id="userphone" name="userphone" value="380956292453" placeholder="+380XXXXXXXXX" required tabindex="5">
+      </p>
+      <p>
+        <label for="city_input">Місто</label><br>
+        <input type="text" id="city_input" name="city_input" list="city_list" placeholder="Введіть місто" required tabindex="6">
+        <datalist id="city_list">
+          <option value="Львів"></option>
+          <option value="Чернівці"></option>
+          <option value="Одеса"></option>
+          <option value="Харків"></option>
+          <option value="Дніпро"></option>
+        </datalist>
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Переваги та опитування</legend>
+
+      <p>
+        <span>Рівень освіти</span><br>
+        <label><input type="radio" name="education" value="middle" tabindex="7"> Середня</label><br>
+        <label><input type="radio" name="education" value="bachelor" tabindex="8"> Бакалавр</label><br>
+        <label><input type="radio" name="education" value="master" tabindex="9"> Магістр</label>
+      </p>
+
+      <p>
+        <span>Зайнятість</span><br>
+        <label><input type="radio" name="employment" value="fulltime" tabindex="10"> Повна зайнятість</label><br>
+        <label><input type="radio" name="employment" value="student" tabindex="11" checked> Студент</label><br>
+        <label><input type="radio" name="employment" value="freelancer" tabindex="12"> Фріланс</label>
+      </p>
+
+      <p>
+        <span>Ваші хобі (оберіть декілька)</span><br>
+        <label><input type="checkbox" name="hobby" value="sports" tabindex="13"> Спорт</label><br>
+        <label><input type="checkbox" name="hobby" value="music" tabindex="14"> Музика</label><br>
+        <label><input type="checkbox" name="hobby" value="reading" tabindex="15"> Читання</label><br>
+        <label><input type="checkbox" name="hobby" value="travel" tabindex="16"> Подорожі</label>
+      </p>
+
+      <p>
+        <label for="experience">Досвід у веб-розробці</label><br>
+        <select name="experience" id="experience" tabindex="17">
+          <option value="beginner" selected>Початківець</option>
+          <option value="intermediate">Середній</option>
+          <option value="advanced">Досвідчений</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="programming_languages">Знання мов програмування (множинний вибір – затисніть Ctrl)</label><br>
+        <select name="programming_languages" id="programming_languages" multiple size="3" tabindex="18">
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="javascript">JavaScript</option>
+          <option value="python">Python</option>
+          <option value="java">Java</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="speciality">Спеціальність</label><br>
+        <select name="speciality" id="speciality" tabindex="19">
+          <optgroup label="Комп'ютерні науки">
+            <option value="computer_science">Комп'ютерні науки</option>
+            <option value="software_engineering">Програмна інженерія</option>
+          </optgroup>
+          <optgroup label="Веб-розробка та технології">
+            <option value="web_development">Веб-розробка</option>
+            <option value="web_design">Веб-дизайн</option>
+          </optgroup>
+          <optgroup label="Кібербезпека та мережі">
+            <option value="networking">Мережі</option>
+            <option value="cybersecurity">Кібербезпека</option>
+          </optgroup>
+          <optgroup label="IT-інженерія">
+            <option value="it_engineering">IT-інженерія</option>
+            <option value="data_science">Наука про дані</option>
+          </optgroup>
+        </select>
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Додаткові матеріали</legend>
+
+      <p>
+        <label for="audio_files">Завантажити ваші аудіофайли</label><br>
+        <input type="file" id="audio_files" name="audio_files" accept="audio/*" tabindex="20">
+      </p>
+      <p>
+        <label for="about_me">Додаткова інформація про себе</label><br>
+        <textarea id="about_me" name="about_me" rows="4" cols="50" placeholder="Введіть ваші додаткові відомості..." tabindex="21"></textarea>
+      </p>
+    </fieldset>
+
+    <p class="buttons">
+      <button type="submit" tabindex="22">Надіслати анкету</button>
+      <button type="reset" tabindex="23">Очистити форму</button>
+    </p>
+  </form>
+</main>
+<footer></footer>
+</body>
+</html>

@@ -1,0 +1,117 @@
+/* Сторінка*/
+body {
+    background-color: #eef2f7;
+    color: #1f2d3d;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+main {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+/*Посилання*/
+a {
+    color: #1565c0;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*Групи полів*/
+fieldset {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid #90caf9;
+    background-color: #f5faff;
+}
+
+legend {
+    padding: 5px 15px;
+    background-color: #1565c0;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/*Підписи*/
+label,
+span {
+    color: #0d3b66;
+    font-weight: 600;
+}
+
+/* Підписи варіантів у радіокнопках*/
+label:has(input[type="radio"]),
+label:has(input[type="checkbox"]) {
+    font-weight: normal;
+    color: #1f2d3d;
+}
+
+/*Поля введення */
+input[type="text"],
+input[type="date"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 5px;
+    padding: 8px 10px;
+    background-color: #ffffff;
+    color: #1f2d3d;
+    font-family: inherit;
+    font-size: 15px;
+    border: 1px solid #90caf9;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    background-color: #fffde7;
+    outline: 2px solid #1565c0;
+}
+
+::placeholder {
+    color: #8a99a8;
+    font-style: italic;
+}
+
+/*Кнопки*/
+.buttons {
+    text-align: center;
+}
+
+button {
+    padding: 10px 25px;
+    border: none;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: #2e7d32;
+}
+
+button[type="reset"] {
+    background-color: #c62828;
+}
+
+button:hover {
+    opacity: 0.85;
+}

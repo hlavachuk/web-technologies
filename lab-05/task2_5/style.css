@@ -1,0 +1,41 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+tr{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+table{
+    width: 900px;
+    height: 500px;
+}
+.first{
+    background-color: #C5DBF0;
+}
+.second{
+    background-color: #E8F1FA;
+    color: black;
+}
+.third{
+    background-color: #4A90D9;
+}
+.t0{
+    background-color: #EAF4FF;
+    color: black;
+}
+.t25{
+    background-color: #B3D9FF;
+}
+.t50{
+    background-color: #66B3FF;
+}
+.t75{
+    background-color: #3399FF;
+}
+.t100{
+    background-color: #007FFF;
+}
