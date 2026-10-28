@@ -1,0 +1,133 @@
+.page {
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.stage {
+    position: relative;
+    width: 690px;
+    height: 545px;
+    overflow: hidden;
+    background: linear-gradient(to right, #b9b9b9 0%, #c8c8c8 60%, #bcbcbc 100%);
+}
+
+/* ---------- Чорна картка ---------- */
+.card {
+    position: absolute;
+    left: 98px;
+    top: 22px;
+    width: 370px;
+    height: 403px;
+    background-color: #000;
+    box-shadow: 8px 12px 20px rgba(0, 0, 0, 0.45);
+    z-index: 2;
+}
+
+.card-temp {
+    position: absolute;
+    left: 20px;
+    bottom: 28px;
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 1;
+    color: #a9a9a9;
+}
+
+/* ---------- Хмара ---------- */
+.cloud {
+    position: absolute;
+    left: 130px;
+    top: 80px;
+    width: 500px;
+    height: 280px;
+    z-index: 3;
+    opacity: 0.95;
+    filter: blur(3px);
+}
+
+.puff {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle at 40% 35%, #fff 35%, rgba(255, 255, 255, 0.85) 60%, rgba(255, 255, 255, 0) 100%);
+}
+
+.puff-2 { left: 110px; top: 90px;  width: 170px; height: 130px; }
+.puff-3 { left: 210px; top: 20px;  width: 170px; height: 150px; }
+.puff-4 { left: 300px; top: 70px;  width: 190px; height: 150px; }
+.puff-5 { left: 170px; top: 130px; width: 260px; height: 110px; }
+.puff-6 { left: 360px; top: 130px; width: 130px; height: 90px;  opacity: 0.8; }
+
+/* ---------- Стрілки ---------- */
+.arrows {
+    position: absolute;
+    left: 23px;
+    top: 140px;
+    width: 148px;
+    height: 73px;
+    background-color: rgba(120, 120, 120, 0.50);
+    z-index: 4;
+}
+
+.arrow {
+    position: absolute;
+    top: 0;
+    width: 74px;
+    line-height: 73px;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 100;
+    color: #222;
+}
+
+.arrow-left  { left: 0; }
+.arrow-right { right: 0; }
+
+/* ---------- Прогноз ---------- */
+.forecast {
+    position: absolute;
+    left: 278px;
+    top: 345px;
+    width: 380px;
+    height: 190px;
+    background-color: #c9c9c9;
+    box-shadow: 8px 8px 0 rgba(90, 90, 90, 0.55);
+    z-index: 1;
+}
+
+.forecast-list {
+    position: absolute;
+    left: 0;
+    bottom: 22px;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 0 22px;
+    white-space: nowrap;
+    font-size: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.forecast-day {
+    display: inline-block;
+    width: 66px;
+    margin-right: 0;
+}
+
+.forecast-name {
+    display: block;
+    font-size: 15px;
+    color: #9a9a9a;
+}
+
+.forecast-temp {
+    display: block;
+    font-size: 26px;
+    color: #222;
+}
+
+/* перші дні частково «ховаються» під карткою */
+.forecast-day:nth-child(-n+3) {
+    opacity: 0.35;
+}

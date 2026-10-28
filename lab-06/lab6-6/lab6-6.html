@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна 6 — Завдання 6: попап</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+
+    <header class="header">
+        <a class="header-link" href="#" tabindex="0">Mail</a>
+        <a class="header-link" href="#" tabindex="0">Images</a>
+
+        <div class="apps">
+            <!-- перемикач попапу: прихований, але фокусований -->
+            <input class="popup-toggle" type="checkbox" id="popup-toggle" tabindex="0" aria-label="Відкрити меню застосунків">
+            <label class="popup-button" for="popup-toggle">
+                <span class="popup-button-dots"></span>
+            </label>
+
+            <div class="popup">
+                <div class="popup-content" tabindex="0">
+                    <div class="app-grid">
+                        <div class="app" tabindex="0"><span class="app-icon">📅</span><span class="app-name">Calendar</span></div>
+                        <div class="app" tabindex="0"><span class="app-icon">✉️</span><span class="app-name">Mail</span></div>
+                        <div class="app" tabindex="0"><span class="app-icon">📰</span><span class="app-name">News</span></div>
+                        <div class="app" tabindex="0"><span class="app-icon">🗺️</span><span class="app-name">Map</span></div>
+                        <div class="app" tabindex="0"><span class="app-icon">📁</span><span class="app-name">Files</span></div>
+                        <div class="app" tabindex="0"><span class="app-icon">👤</span><span class="app-name">Contacts</span></div>
+                        <div class="app" tabindex="0"><span class="app-icon">🌐</span><span class="app-name">Translate</span></div>
+                        <div class="app" tabindex="0"><span class="app-icon">🎬</span><span class="app-name">Videos</span></div>
+                        <div class="app" tabindex="0"><span class="app-icon">🔍</span><span class="app-name">Search</span></div>
+                        <div class="app" tabindex="0"><span class="app-icon">🖼️</span><span class="app-name">Photos</span></div>
+                        <div class="app" tabindex="0"><span class="app-icon">🎨</span><span class="app-name">Apps</span></div>
+                        <div class="app" tabindex="0"><span class="app-icon">📄</span><span class="app-name">Documents</span></div>
+                    </div>
+
+                    <!-- додаткові іконки (з'являються після натискання «More») -->
+                    <div class="extra">
+                        <div class="app-grid app-grid--extra">
+                            <div class="app" tabindex="0"><span class="app-icon">💬</span><span class="app-name">Chat</span></div>
+                            <div class="app" tabindex="0"><span class="app-icon">🎓</span><span class="app-name">Classroom</span></div>
+                            <div class="app" tabindex="0"><span class="app-icon">⭐</span><span class="app-name">Collection</span></div>
+                            <div class="app" tabindex="0"><span class="app-icon">🔴</span><span class="app-name">Mars</span></div>
+                            <div class="app" tabindex="0"><span class="app-icon">📝</span><span class="app-name">Blogs</span></div>
+                            <div class="app" tabindex="0"><span class="app-icon">📣</span><span class="app-name">Promos</span></div>
+                        </div>
+                        <div class="extra-footer">Even more from Kottans</div>
+                    </div>
+                </div>
+
+                <input class="more-toggle" type="checkbox" id="more-toggle" tabindex="0" aria-label="Показати більше іконок">
+                <label class="more-button" for="more-toggle">More</label>
+            </div>
+        </div>
+
+        <span class="header-bell">🔔</span>
+        <span class="header-avatar">🙂</span>
+    </header>
+
+</body>
+</html>

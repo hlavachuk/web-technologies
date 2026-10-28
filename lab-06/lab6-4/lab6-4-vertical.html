@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна 6 — Завдання 4: вертикальна навігація</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page page--vertical">
+
+    <nav class="sidebar">
+        <ul class="vmenu">
+            <li class="vmenu-item vmenu-item--active">
+                <a class="vmenu-link" href="#"><span class="material-icons vmenu-icon">home</span>Home</a>
+            </li>
+
+            <li class="vmenu-item vmenu-item--parent">
+                <a class="vmenu-link" href="#"><span class="material-icons vmenu-icon">article</span>About</a>
+                <ul class="vsubmenu">
+                    <li class="vsubmenu-item vsubmenu-item--parent">
+                        <a class="vsubmenu-link" href="#">Team</a>
+                        <ul class="vsubmenu vsubmenu--level3">
+                            <li class="vsubmenu-item"><a class="vsubmenu-link" href="#">Developers</a></li>
+                            <li class="vsubmenu-item"><a class="vsubmenu-link" href="#">Designers</a></li>
+                            <li class="vsubmenu-item"><a class="vsubmenu-link" href="#">Managers</a></li>
+                        </ul>
+                    </li>
+                    <li class="vsubmenu-item"><a class="vsubmenu-link" href="#">History</a></li>
+                    <li class="vsubmenu-item"><a class="vsubmenu-link" href="#">Mission</a></li>
+                </ul>
+            </li>
+
+            <li class="vmenu-item vmenu-item--parent">
+                <a class="vmenu-link" href="#"><span class="material-icons vmenu-icon">coffee</span>Work With Me</a>
+                <ul class="vsubmenu">
+                    <li class="vsubmenu-item vsubmenu-item--parent">
+                        <a class="vsubmenu-link" href="#">Projects</a>
+                        <ul class="vsubmenu vsubmenu--level3">
+                            <li class="vsubmenu-item"><a class="vsubmenu-link" href="#">Web</a></li>
+                            <li class="vsubmenu-item"><a class="vsubmenu-link" href="#">Mobile</a></li>
+                        </ul>
+                    </li>
+                    <li class="vsubmenu-item"><a class="vsubmenu-link" href="#">Pricing</a></li>
+                    <li class="vsubmenu-item"><a class="vsubmenu-link" href="#">Contact</a></li>
+                </ul>
+            </li>
+
+            <li class="vmenu-item">
+                <a class="vmenu-link" href="#"><span class="material-icons vmenu-icon">mail</span>Contacts</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="content content--shifted">
+        <h2 class="content-title">Вертикальна навігація</h2>
+        <p class="content-text">Панель зафіксована (position: fixed) і займає всю висоту вікна. Наведіть курсор на пункти About та Work With Me — меню має три рівні вкладеності. Активний пункт — Home.</p>
+    </main>
+</body>
+</html>

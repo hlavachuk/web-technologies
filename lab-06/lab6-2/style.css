@@ -1,0 +1,84 @@
+.page {
+    margin: 0;
+    padding: 30px;
+    font-family: Calibri, Arial, sans-serif;
+}
+
+.stage {
+    position: relative;
+    width: 480px;
+    height: 330px;
+}
+
+.block {
+    position: absolute;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 22px;
+}
+
+.block-1 {
+    left: 0;
+    top: 0;
+    width: 217px;
+    height: 75px;
+    line-height: 75px;
+    background-color: #52ae5f;
+    color: #222;
+    border: 2px solid #3d8a49;
+    cursor: pointer;
+}
+
+/* Блоки 2 і 3 приховані через visibility + opacity (з невеликою затримкою
+   приховування, щоб курсор міг перейти з одного блоку на інший) */
+.block-2 {
+    left: 235px;
+    top: 0;
+    width: 217px;
+    height: 75px;
+    line-height: 75px;
+    background-color: #648ed0;
+    color: #fff;
+    border: 2px solid #4a72b0;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0s 0.4s;
+}
+
+.block-3 {
+    left: 0;
+    top: 90px;
+    width: 452px;
+    height: 220px;
+    padding-top: 15px;
+    background-color: #5d4a77;
+    color: #e6e0ee;
+    border-bottom: 4px solid #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0s 0.4s;
+}
+
+/* при наведенні на Блок 1 з'являється Блок 2 */
+.block-1:hover + .block-2,
+.block-2:hover {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+}
+
+/* при наведенні на Блок 2 з'являється Блок 3 */
+.block-2:hover + .block-3,
+.block-3:hover {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+}
+
+/* Блок 2 залишається видимим, поки курсор на Блоці 3 */
+.block-2:has(+ .block-3:hover) {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+}
