@@ -1,0 +1,16 @@
+{
+  "name": "lab-07-autoprefixer",
+  "private": true,
+  "scripts": {
+    "build": "postcss css/styles.css --use autoprefixer --no-map -o build/styles.css"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.6.2",
+    "postcss": "^8.5.32",
+    "postcss-cli": "^11.0.1"
+  }
+}

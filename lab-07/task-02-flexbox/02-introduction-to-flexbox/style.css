@@ -1,6 +1,0 @@
-/* Introduction to Flexbox — implementation for laboratory 07. */
-.demo {
-  display:flex;
-  min-height:250px}
-  .box {
-    flex:1}

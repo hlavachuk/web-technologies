@@ -1,7 +1,0 @@
-/* Working with Flexbox flex-direction — implementation for laboratory 07. */
-.demo {
-  display:flex;
-  flex-direction:column-reverse;
-  min-height:320px}
-  .box {
-    flex:1}
