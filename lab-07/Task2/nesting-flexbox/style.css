@@ -82,4 +82,3 @@ a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(-
 @media(max-width:600px){.wrapper{padding:16px}.slider-nav ul{flex-wrap:wrap}.slider-nav li{flex-basis:40%}.slider-nav .arrow{flex-basis:10%}.slider-nav a{overflow-wrap:anywhere}}
 
 /* Lesson labels are outside the teaching layout. */
-

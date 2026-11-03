@@ -40,4 +40,3 @@ body{font-family:"Open Sans",sans-serif;background-image:linear-gradient(260deg,
 a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--exercise-accent);outline-offset:3px}
 
 /* Lesson labels are outside the teaching layout. */
-

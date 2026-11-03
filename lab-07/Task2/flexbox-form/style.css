@@ -97,4 +97,3 @@ a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(-
 .cover{padding:20px}.flex-form{max-width:100%;flex-wrap:wrap}.flex-form>*{min-width:0;flex:1 1 150px}input[type="search"]{flex:3 1 250px}.dog{width:100%;object-fit:cover}.flex-form label{flex:0 1 auto}@media(max-width:600px){body{overflow:auto}.flex-form{border-width:10px}.flex-form>*{flex-basis:100%}}
 
 /* Lesson labels are outside the teaching layout. */
-

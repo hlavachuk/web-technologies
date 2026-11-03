@@ -22,4 +22,3 @@
 :root{--page-bg:#f0f3f4;--ink:#333;--gap:20px}body{font-family:"Open Sans",sans-serif;margin:0;background:var(--page-bg);color:var(--ink)}.container{height:80vh}.box{padding:var(--gap);font-size:40px;background:#1abc9c}.box2{background:#3498db}
 
 /* Lesson labels are outside the teaching layout. */
-

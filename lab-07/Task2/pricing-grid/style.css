@@ -94,4 +94,3 @@ a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(-
 .pricing-grid{flex-wrap:wrap}.plan{min-width:180px}.plan .features{flex-basis:100%}@media(max-width:600px){.plan{flex-basis:100%;margin:12px 20px}}
 
 /* Lesson labels are outside the teaching layout. */
-

@@ -46,4 +46,3 @@ a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(-
 .elements{display:flex;flex-wrap:wrap;align-items:stretch;padding:10px}.item{flex:1 1 200px}.item.large{flex-grow:2}
 
 /* Lesson labels are outside the teaching layout. */
-
