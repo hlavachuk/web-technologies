@@ -31,7 +31,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 
 /* Flexbox snapshot for this lesson. */
-.container{display:flex;justify-content:space-between;min-height:100vh;align-items:flex-start}.box{font-size:50px;width:15%}
+.container{display:flex;justify-content:space-between;min-height:100vh;align-items:flex-start}.box{font-size:50px;width:20%}
 
 /* Laboratory additions: reset, Google font, tokens, visible focus. */
 :root{--exercise-bg-start:#2376ae;--exercise-bg-end:#c16ecf;--exercise-accent:#f0cb45;--exercise-ink:#222;--exercise-space:20px}
