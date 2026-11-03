@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Seven-day New York weather forecast. Flexbox layout for laboratory work 7, task 3.">
+  <title>New York, NY — Weather Forecast</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="weather">
+  <header class="weather-header">
+    <h1>New York, NY</h1>
+    <p class="date"><time datetime="2025-04-15">Tuesday, April 15th</time></p>
+    <p class="condition">Overcast</p>
+  </header>
+  <section class="current" aria-label="Current weather">
+    <div class="temperature">
+      <img src="icons/iconfinder_weather04.png" width="128" height="128" alt="Overcast">
+      <p aria-label="58 degrees Fahrenheit">58<span class="unit">°F</span></p>
+    </div>
+    <dl class="details">
+      <div><dt>Precipitation:</dt><dd>100%</dd></div>
+      <div><dt>Humidity:</dt><dd>97%</dd></div>
+      <div><dt>Wind:</dt><dd>4 mph SW</dd></div>
+      <div><dt>Pollen Count:</dt><dd>36</dd></div>
+    </dl>
+  </section>
+  <section aria-label="Seven-day forecast">
+    <ul class="forecast">
+      <li class="day">
+        <h2>Today</h2>
+        <img src="icons/iconfinder_weather08.png" width="100" height="100" alt="Thunderstorm" loading="lazy">
+        <p class="range"><span><span class="visually-hidden">High: </span>68°</span><span><span class="visually-hidden">Low: </span>36°</span></p>
+        <p class="pollen">Pollen <span>36</span></p>
+      </li>
+      <li class="day">
+        <h2>Wednesday</h2>
+        <img src="icons/iconfinder_weather01.png" width="100" height="100" alt="Sunny" loading="lazy">
+        <p class="range"><span><span class="visually-hidden">High: </span>50°</span><span><span class="visually-hidden">Low: </span>39°</span></p>
+        <p class="pollen">Pollen <span>36</span></p>
+      </li>
+      <li class="day">
+        <h2>Thursday</h2>
+        <img src="icons/iconfinder_weather01.png" width="100" height="100" alt="Sunny" loading="lazy">
+        <p class="range"><span><span class="visually-hidden">High: </span>55°</span><span><span class="visually-hidden">Low: </span>39°</span></p>
+        <p class="pollen">Pollen <span>36</span></p>
+      </li>
+      <li class="day">
+        <h2>Friday</h2>
+        <img src="icons/iconfinder_weather02.png" width="100" height="100" alt="Partly cloudy" loading="lazy">
+        <p class="range"><span><span class="visually-hidden">High: </span>54°</span><span><span class="visually-hidden">Low: </span>43°</span></p>
+        <p class="pollen">Pollen <span>36</span></p>
+      </li>
+      <li class="day">
+        <h2>Saturday</h2>
+        <img src="icons/iconfinder_weather06.png" width="100" height="100" alt="Rain" loading="lazy">
+        <p class="range"><span><span class="visually-hidden">High: </span>64°</span><span><span class="visually-hidden">Low: </span>46°</span></p>
+        <p class="pollen">Pollen <span>36</span></p>
+      </li>
+      <li class="day">
+        <h2>Sunday</h2>
+        <img src="icons/iconfinder_weather06.png" width="100" height="100" alt="Rain" loading="lazy">
+        <p class="range"><span><span class="visually-hidden">High: </span>64°</span><span><span class="visually-hidden">Low: </span>50°</span></p>
+        <p class="pollen">Pollen <span>36</span></p>
+      </li>
+      <li class="day">
+        <h2>Monday</h2>
+        <img src="icons/iconfinder_weather02.png" width="100" height="100" alt="Partly cloudy" loading="lazy">
+        <p class="range"><span><span class="visually-hidden">High: </span>61°</span><span><span class="visually-hidden">Low: </span>50°</span></p>
+        <p class="pollen">Pollen <span>36</span></p>
+      </li>
+    </ul>
+  </section>
+  <footer class="weather-footer">
+    <p>Static forecast data from the laboratory reference.</p>
+  </footer>
+</main>
+</body>
+</html>

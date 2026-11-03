@@ -1,0 +1,195 @@
+:root {
+  --color-text: #484848;
+  --color-muted: #898989;
+  --color-border: #cccccc;
+  --color-background: #ffffff;
+  --font-body: "Open Sans", sans-serif;
+  --content-width: 800px;
+  --gutter: 20px;
+  --space: 24px;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+  font: 400 20px/1.4 var(--font-body);
+}
+
+.weather {
+  max-width: var(--content-width);
+  margin-inline: auto;
+  padding: 20px var(--gutter);
+}
+
+h1 {
+  font-size: clamp(34px, 9vw, 72px);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -2px;
+}
+
+.date,
+.condition {
+  color: var(--color-muted);
+  font-size: clamp(18px, 3.25vw, 26px);
+}
+
+.date {
+  margin-top: 8px;
+}
+
+/* The current conditions wrap into a column when space is limited. */
+.current {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space);
+  align-items: center;
+  padding-block: 8px 32px;
+}
+
+.temperature {
+  display: flex;
+  flex: 1 1 280px;
+  align-items: center;
+  gap: 16px;
+}
+
+.temperature img {
+  flex: 0 0 128px;
+  width: 128px;
+  height: 128px;
+  object-fit: contain;
+}
+
+.temperature p {
+  font-size: 64px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.temperature .unit {
+  color: var(--color-muted);
+  font-size: 26px;
+  font-weight: 400;
+  vertical-align: super;
+}
+
+.details {
+  flex: 1 1 280px;
+  margin: 0;
+  font-size: 24px;
+}
+
+.details div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.details dt {
+  color: var(--color-muted);
+}
+
+.details dd {
+  margin: 0;
+}
+
+/* Every forecast item uses the same four Flexbox columns. */
+.forecast {
+  display: flex;
+  flex-direction: column;
+}
+
+.day {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 140px;
+  border-top: 2px solid var(--color-border);
+}
+
+.day:last-child {
+  border-bottom: 2px solid var(--color-border);
+}
+
+.day h2 {
+  flex: 0 1 28%;
+  min-width: 0;
+  font-size: 24px;
+}
+
+.day img {
+  flex: 0 0 100px;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.range {
+  display: flex;
+  flex: 0 0 58px;
+  flex-direction: column;
+  font-size: 25px;
+}
+
+.range > span + span,
+.pollen {
+  color: var(--color-muted);
+}
+
+.pollen {
+  flex: 0 0 25%;
+  font-size: 24px;
+}
+
+.pollen span {
+  color: var(--color-text);
+}
+
+.weather-footer {
+  padding-top: var(--space);
+  color: var(--color-muted);
+  font-size: 12px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media (max-width: 599px) {
+  .day {
+    gap: 8px;
+    min-height: 108px;
+  }
+
+  .day h2 {
+    flex-basis: 29%;
+    font-size: 15px;
+  }
+
+  .day img {
+    flex-basis: 62px;
+    width: 62px;
+    height: 62px;
+  }
+
+  .range {
+    flex-basis: 36px;
+    font-size: 20px;
+  }
+
+  .pollen {
+    flex-basis: 20%;
+    font-size: 13px;
+  }
+
+  .details {
+    font-size: 20px;
+  }
+}
