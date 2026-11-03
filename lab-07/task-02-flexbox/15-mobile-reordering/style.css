@@ -1,0 +1,23 @@
+/* Mobile content reordering with Flexbox — implementation for laboratory 07. */
+.layout {
+  display:flex;
+  flex-direction:column;
+  gap:var(--gap)}
+  .layout>* {
+    padding:24px;
+    background:var(--panel)}
+    .layout nav {
+      order:-1}
+      @media(min-width:768px) {
+        .layout {
+          flex-flow:row wrap}
+          .layout header {
+            flex-basis:100%}
+            .layout nav {
+              order:0;
+              flex:1}
+              .layout article {
+                flex:3}
+                .layout footer {
+                  flex-basis:100%}
+                }

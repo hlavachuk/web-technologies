@@ -1,0 +1,7 @@
+/* Wrapping elements with Flexbox — implementation for laboratory 07. */
+.demo {
+  display:flex;
+  flex-wrap:wrap;
+  gap:var(--gap)}
+  .box {
+    flex:0 0 calc((100% - 2 * var(--gap))/3)}

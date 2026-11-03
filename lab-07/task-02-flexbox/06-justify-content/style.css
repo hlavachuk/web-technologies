@@ -1,0 +1,9 @@
+/* Flexbox Alignment and Centering with justify-content — implementation for laboratory 07. */
+.demo {
+  display:flex;
+  justify-content:space-between;
+  gap:var(--gap);
+  min-height:220px;
+  align-items:flex-start}
+  .box {
+    flex:0 1 100px}

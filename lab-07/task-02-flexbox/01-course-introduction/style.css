@@ -1,0 +1,6 @@
+/* Introduction to What The FlexBox — implementation for laboratory 07. */
+.demo {
+  display:flex;
+  gap:var(--gap)}
+  .box {
+    flex:1}

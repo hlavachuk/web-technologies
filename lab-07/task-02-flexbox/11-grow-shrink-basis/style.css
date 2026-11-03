@@ -1,0 +1,11 @@
+/* Finally understanding Flexbox flex-grow, flex-shrink and flex-basis — implementation for laboratory 07. */
+.demo {
+  display:flex;
+  gap:var(--gap)}
+  .box {
+    min-width:0;
+    overflow-wrap:anywhere}
+    .box:first-child {
+      flex:10 5 400px}
+      .box:last-child {
+        flex:1 1 400px}

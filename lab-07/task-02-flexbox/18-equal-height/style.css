@@ -1,0 +1,14 @@
+/* Flexbox Equal height columns and leftover elements — implementation for laboratory 07. */
+.equal-grid {
+  display:flex;
+  flex-wrap:wrap;
+  gap:var(--gap);
+  align-items:stretch}
+  .equal-grid article {
+    display:flex;
+    flex-direction:column;
+    flex:1 1 240px;
+    padding:24px;
+    background:var(--panel)}
+    .equal-grid .cta {
+      margin-top:auto}

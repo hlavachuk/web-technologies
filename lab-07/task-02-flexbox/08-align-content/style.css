@@ -1,0 +1,9 @@
+/* Alignment and Centering with align-content — implementation for laboratory 07. */
+.demo {
+  display:flex;
+  flex-wrap:wrap;
+  align-content:space-between;
+  gap:var(--gap);
+  min-height:440px}
+  .box {
+    flex:0 0 calc((100% - 2 * var(--gap))/3)}
