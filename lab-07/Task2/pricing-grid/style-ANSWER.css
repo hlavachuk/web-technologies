@@ -88,7 +88,7 @@ a {
 /* Laboratory additions: reset, Google font, tokens, visible focus. */
 :root{--exercise-bg-start:#2376ae;--exercise-bg-end:#c16ecf;--exercise-accent:#f0cb45;--exercise-ink:#222;--exercise-space:20px}
 body{font-family:"Open Sans",sans-serif;background-image:linear-gradient(260deg,var(--exercise-bg-start),var(--exercise-bg-end))}
-.exercise-return{position:fixed;bottom:10px;right:10px;z-index:20;width:auto;padding:8px 12px;background:var(--exercise-ink);color:white;font:14px/1.5 sans-serif;text-decoration:none}
+
 a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--exercise-accent);outline-offset:3px}
 
 .pricing-grid{flex-wrap:wrap}.plan{min-width:180px}.plan .features{flex-basis:100%}@media(max-width:600px){.plan{flex-basis:100%;margin:12px 20px}}

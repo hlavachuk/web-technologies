@@ -147,7 +147,7 @@ a.button {
 /* Laboratory additions: reset, Google font, tokens, visible focus. */
 :root{--exercise-bg-start:#2376ae;--exercise-bg-end:#c16ecf;--exercise-accent:#f0cb45;--exercise-ink:#222;--exercise-space:20px}
 body{font-family:"Open Sans",sans-serif;background-image:linear-gradient(260deg,var(--exercise-bg-start),var(--exercise-bg-end))}
-.exercise-return{position:fixed;bottom:10px;right:10px;z-index:20;width:auto;padding:8px 12px;background:var(--exercise-ink);color:white;font:14px/1.5 sans-serif;text-decoration:none}
+
 a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--exercise-accent);outline-offset:3px}
 
 .app-wrap{width:calc(100% - 20px)}.app-header,.icon-bar{flex:0 0 auto}.content{flex:1 1 auto;min-height:0}.app-header h1{font-size:clamp(16px,4vw,22px)}.icon-bar a{min-width:0;padding:12px 4px;font-size:12px}
