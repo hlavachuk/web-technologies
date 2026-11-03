@@ -41,3 +41,6 @@ a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(-
 
 /* Keep large teaching boxes inside their demonstration scroll area. */
 .container{max-width:100%;overflow:auto}.box{min-width:0}
+
+/* Lesson labels are outside the teaching layout. */
+.lesson-caption{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;padding:12px 20px;background:#fff;color:#243334;font:700 14px/1.5 "Open Sans",sans-serif;border-bottom:1px solid #dce3df}.lesson-caption a{display:inline;width:auto;padding:0;background:none;color:#0a7869;font:inherit;letter-spacing:normal;text-decoration:underline}

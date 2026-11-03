@@ -155,3 +155,6 @@ body{font-family:"Open Sans",sans-serif;background-image:linear-gradient(260deg,
 a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--exercise-accent);outline-offset:3px}
 
 .menu-check{position:absolute;width:1px;height:1px;clip-path:inset(50%)}.menu-check:focus-visible+ul{outline:3px solid var(--exercise-accent)}.toggleNav{cursor:pointer;color:white;background:var(--exercise-ink);padding:12px;text-align:center}.wrapper{padding-inline:20px}.signup input{max-width:100%}@media(max-width:500px){.menu-check:checked+ul{display:flex}.hero{order:5}}
+
+/* Lesson labels are outside the teaching layout. */
+.lesson-caption{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;padding:12px 20px;background:#fff;color:#243334;font:700 14px/1.5 "Open Sans",sans-serif;border-bottom:1px solid #dce3df}.lesson-caption a{display:inline;width:auto;padding:0;background:none;color:#0a7869;font:inherit;letter-spacing:normal;text-decoration:underline}

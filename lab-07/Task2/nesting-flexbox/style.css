@@ -80,3 +80,6 @@ body{font-family:"Open Sans",sans-serif;background-image:linear-gradient(260deg,
 a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--exercise-accent);outline-offset:3px}
 
 @media(max-width:600px){.wrapper{padding:16px}.slider-nav ul{flex-wrap:wrap}.slider-nav li{flex-basis:40%}.slider-nav .arrow{flex-basis:10%}.slider-nav a{overflow-wrap:anywhere}}
+
+/* Lesson labels are outside the teaching layout. */
+.lesson-caption{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;padding:12px 20px;background:#fff;color:#243334;font:700 14px/1.5 "Open Sans",sans-serif;border-bottom:1px solid #dce3df}.lesson-caption a{display:inline;width:auto;padding:0;background:none;color:#0a7869;font:inherit;letter-spacing:normal;text-decoration:underline}

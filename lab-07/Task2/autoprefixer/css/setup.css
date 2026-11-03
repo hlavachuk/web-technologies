@@ -20,3 +20,6 @@
 
 
 :root{--page-bg:#f0f3f4;--ink:#333;--gap:20px}body{font-family:"Open Sans",sans-serif;margin:0;background:var(--page-bg);color:var(--ink)}.container{height:80vh}.box{padding:var(--gap);font-size:40px;background:#1abc9c}.box2{background:#3498db}.exercise-return{padding:var(--gap);display:block}
+
+/* Lesson labels are outside the teaching layout. */
+.lesson-caption{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;padding:12px 20px;background:#fff;color:#243334;font:700 14px/1.5 "Open Sans",sans-serif;border-bottom:1px solid #dce3df}.lesson-caption a{display:inline;width:auto;padding:0;background:none;color:#0a7869;font:inherit;letter-spacing:normal;text-decoration:underline}

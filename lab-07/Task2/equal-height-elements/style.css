@@ -44,3 +44,6 @@ a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(-
 
 /* Equal-height and leftover-item solution. */
 .elements{display:flex;flex-wrap:wrap;align-items:stretch;padding:10px}.item{flex:1 1 200px}.item.large{flex-grow:2}
+
+/* Lesson labels are outside the teaching layout. */
+.lesson-caption{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;padding:12px 20px;background:#fff;color:#243334;font:700 14px/1.5 "Open Sans",sans-serif;border-bottom:1px solid #dce3df}.lesson-caption a{display:inline;width:auto;padding:0;background:none;color:#0a7869;font:inherit;letter-spacing:normal;text-decoration:underline}

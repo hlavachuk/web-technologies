@@ -38,3 +38,6 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 body{font-family:"Open Sans",sans-serif;background-image:linear-gradient(260deg,var(--exercise-bg-start),var(--exercise-bg-end))}
 .exercise-return{position:fixed;bottom:10px;right:10px;z-index:20;width:auto;padding:8px 12px;background:var(--exercise-ink);color:white;font:14px/1.5 sans-serif;text-decoration:none}
 a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--exercise-accent);outline-offset:3px}
+
+/* Lesson labels are outside the teaching layout. */
+.lesson-caption{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;padding:12px 20px;background:#fff;color:#243334;font:700 14px/1.5 "Open Sans",sans-serif;border-bottom:1px solid #dce3df}.lesson-caption a{display:inline;width:auto;padding:0;background:none;color:#0a7869;font:inherit;letter-spacing:normal;text-decoration:underline}
