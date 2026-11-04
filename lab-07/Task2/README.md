@@ -13,29 +13,29 @@
 | Урок | Тема | Код |
 | --- | --- | --- |
 | 1 | Огляд курсу | Оглядовий урок без окремої вправи |
-| 2 | Flex-контейнер | [intro](intro/index.html) |
-| 3 | Напрямок | [flex-direction](flex-direction/index.html) |
-| 4 | Перенесення | [flex-direction/wrapping](flex-direction/wrapping.html) |
-| 5 | Порядок | [ordering](ordering/index.html) |
-| 6 | justify-content | [alignment-and-centering/lesson-06](alignment-and-centering/lesson-06.html) |
-| 7 | align-items | [alignment-and-centering/lesson-07](alignment-and-centering/lesson-07.html) |
-| 8 | align-content | [alignment-and-centering/lesson-08](alignment-and-centering/lesson-08.html) |
-| 9 | align-self | [alignment-and-centering/lesson-09](alignment-and-centering/lesson-09.html) |
-| 10 | flex | [flexbox-sizing](flexbox-sizing/index.html) |
-| 11 | grow, shrink, basis | [flex-grow-and-shrink](flex-grow-and-shrink/index.html) |
-| 12 | basis і перенесення | [flex-wrapping-and-columns](flex-wrapping-and-columns/index.html) |
-| 13 | Autoprefixer | [autoprefixer](autoprefixer/index.html) |
-| 14 | Навігація | [flexbox-nav](flexbox-nav/index.html) |
-| 15 | Мобільний порядок блоків | [mobile-reordering](mobile-reordering/index.html) |
-| 16 | Вкладені flex-контейнери | [nesting-flexbox](nesting-flexbox/index.html) |
-| 17 | Тарифні картки | [pricing-grid](pricing-grid/index.html) |
-| 18 | Однакова висота | [equal-height-elements](equal-height-elements/index.html) |
-| 19 | Форма в рядок | [flexbox-form](flexbox-form/index.html) |
-| 20 | Макет застосунку | [flexbox-app-layout](flexbox-app-layout/index.html) |
+| 2 | Flex-контейнер | [intro](02-intro/index.html) |
+| 3 | Напрямок | [flex-direction](03-04-flex-direction/index.html) |
+| 4 | Перенесення | [03-04-flex-direction/wrapping](03-04-flex-direction/wrapping.html) |
+| 5 | Порядок | [ordering](05-ordering/index.html) |
+| 6 | justify-content | [06-09-alignment-and-centering/lesson-06](06-09-alignment-and-centering/lesson-06.html) |
+| 7 | align-items | [06-09-alignment-and-centering/lesson-07](06-09-alignment-and-centering/lesson-07.html) |
+| 8 | align-content | [06-09-alignment-and-centering/lesson-08](06-09-alignment-and-centering/lesson-08.html) |
+| 9 | align-self | [06-09-alignment-and-centering/lesson-09](06-09-alignment-and-centering/lesson-09.html) |
+| 10 | flex | [flexbox-sizing](10-flexbox-sizing/index.html) |
+| 11 | grow, shrink, basis | [flex-grow-and-shrink](11-flex-grow-and-shrink/index.html) |
+| 12 | basis і перенесення | [flex-wrapping-and-columns](12-flex-wrapping-and-columns/index.html) |
+| 13 | Autoprefixer | [autoprefixer](13-autoprefixer/index.html) |
+| 14 | Навігація | [flexbox-nav](14-flexbox-nav/index.html) |
+| 15 | Мобільний порядок блоків | [mobile-reordering](15-mobile-reordering/index.html) |
+| 16 | Вкладені flex-контейнери | [nesting-flexbox](16-nesting-flexbox/index.html) |
+| 17 | Тарифні картки | [pricing-grid](17-pricing-grid/index.html) |
+| 18 | Однакова висота | [equal-height-elements](18-equal-height-elements/index.html) |
+| 19 | Форма в рядок | [flexbox-form](19-flexbox-form/index.html) |
+| 20 | Макет застосунку | [flexbox-app-layout](20-flexbox-app-layout/index.html) |
 
 ## Урок 13: реальна збірка
 
-У папці `autoprefixer` встановити залежності через `npm install`, потім виконати `npm run build` або `node gulpfile.js`. Результат — `build/styles.css`.
+У папці `13-autoprefixer` встановити залежності через `npm install`, потім виконати `npm run build` або `node gulpfile.js`. Результат — `build/styles.css`.
 
 `gulpfile.js` відтворює ланцюжок PostCSS → Autoprefixer напряму на сучасному Node.js, без несумісної старої версії Gulp. Згенерований CSS включений до репозиторію, тому приклад відкривається без встановлення залежностей.
 
@@ -67,4 +67,4 @@
 
 ## Підписи уроків
 
-У [списку](index.html) є всі 20 пронумерованих уроків. На сторінці кожної вправи зазначено номер і назву; README папок містять відповідність урокам.
+У [списку](index.html) є всі 20 пронумерованих уроків. Назви папок починаються з номера уроку; спільні вправи мають діапазони 03–04 і 06–09. Номери й назви також є у списку та заголовках вкладок браузера. README папок містять відповідність урокам.
