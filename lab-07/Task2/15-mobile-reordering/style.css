@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
-/* Some CSS Setup - nothing to do with flexbox */
+
 html {
   box-sizing: border-box;
 }
@@ -49,7 +49,6 @@ input {
   border:0;
 }
 
-
 section, footer {
   text-align: center;
   background:rgba(0,0,0,0.2);
@@ -59,7 +58,6 @@ section, footer {
   font-weight: 100;
 }
 
-/* Flex Container */
 .flex-nav ul {
   border:1px solid black;
   list-style: none;
@@ -68,7 +66,6 @@ section, footer {
   display:flex;
 }
 
-/* Flex Item */
 .flex-nav li {
   flex:3;
 }
@@ -76,7 +73,6 @@ section, footer {
 .flex-nav .social {
   flex:1;
 }
-
 
 @media all and (max-width:1000px) {
 
@@ -94,28 +90,21 @@ section, footer {
 
 }
 
-
-/* This is where the magic Happens */
-
 @media all and (max-width:500px) {
 
   .flex-nav li {
     flex-basis:100%;
   }
 
-
-  /* Turn on flexbox */
   .wrapper {
     display:flex;
     flex-direction:column;
   }
 
-  /* Reorder items */
   .wrapper > * {
     order:999;
   }
 
-  /* Nav */
   .flex-nav {
     order:1;
   }
@@ -131,29 +120,23 @@ section, footer {
       display:flex;
     }
 
-  /* Header */
   .top {
     order:2;
   }
 
-  /* Details */
   .details {
     order:3;
   }
 
-  /* Sign Up */
   .signup {
     order:4;
   }
 
 }
 
-/* Laboratory additions: reset, Google font, tokens, visible focus. */
 :root{--exercise-bg-start:#2376ae;--exercise-bg-end:#c16ecf;--exercise-accent:#f0cb45;--exercise-ink:#222;--exercise-space:20px}
 body{font-family:"Open Sans",sans-serif;background-image:linear-gradient(260deg,var(--exercise-bg-start),var(--exercise-bg-end))}
 
 a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--exercise-accent);outline-offset:3px}
 
 .menu-check{position:absolute;width:1px;height:1px;clip-path:inset(50%)}.menu-check:focus-visible+ul{outline:3px solid var(--exercise-accent)}.toggleNav{cursor:pointer;color:white;background:var(--exercise-ink);padding:12px;text-align:center}.wrapper{padding-inline:20px}.signup input{max-width:100%}@media(max-width:500px){.menu-check:checked+ul{display:flex}.hero{order:5}}
-
-/* Lesson labels are outside the teaching layout. */

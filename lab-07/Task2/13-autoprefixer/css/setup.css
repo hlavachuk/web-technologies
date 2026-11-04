@@ -14,11 +14,6 @@
   flex:1 1 360px;
 }
 
-
-/* Flexbox snapshot for this lesson. */
 .container{display:flex;flex-direction:column;align-content:center;justify-content:center;min-height:100vh}.box{padding:20px;font-size:50px}.box1{flex:10 5 450px;background:#1abc9c}.box2{flex:1 1 360px;background:#3498db}
 
-
 :root{--page-bg:#f0f3f4;--ink:#333;--gap:20px}body{font-family:"Open Sans",sans-serif;margin:0;background:var(--page-bg);color:var(--ink)}.container{height:80vh}.box{padding:var(--gap);font-size:40px;background:#1abc9c}.box2{background:#3498db}
-
-/* Lesson labels are outside the teaching layout. */

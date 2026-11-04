@@ -1,5 +1,3 @@
-// The course used Gulp. This implementation uses the same PostCSS pipeline
-// directly so it runs on modern Node.js without Gulp 3.
 const fs = require("node:fs/promises");
 const postcss = require("postcss");
 const autoprefixer = require("autoprefixer");

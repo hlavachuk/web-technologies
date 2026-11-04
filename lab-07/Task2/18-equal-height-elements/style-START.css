@@ -1,4 +1,3 @@
-/* Some CSS Setup - nothing to do with flexbox */
 html {
   box-sizing: border-box;
 }
@@ -31,5 +30,3 @@ a {
   padding:20px;
   font-size: 30px;
 }
-
-/* Flexbox Starts Here: */

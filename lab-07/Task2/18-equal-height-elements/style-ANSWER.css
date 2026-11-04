@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
-/* Some CSS Setup - nothing to do with flexbox */
+
 html {
   box-sizing: border-box;
 }
@@ -33,14 +33,9 @@ a {
   font-size: 30px;
 }
 
-/* Flexbox Starts Here: */
-
-
-/* Laboratory additions: reset, Google font, tokens, visible focus. */
 :root{--exercise-bg-start:#2376ae;--exercise-bg-end:#c16ecf;--exercise-accent:#f0cb45;--exercise-ink:#222;--exercise-space:20px}
 body{font-family:"Open Sans",sans-serif;background-image:linear-gradient(260deg,var(--exercise-bg-start),var(--exercise-bg-end))}
 
 a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--exercise-accent);outline-offset:3px}
 
-/* Equal-height and leftover-item solution. */
 .elements{display:flex;flex-wrap:wrap;align-items:stretch;padding:10px}.item{flex:1 1 200px}.item.large{flex-grow:2}

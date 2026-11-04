@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
-/* Some CSS Setup - nothing to do with flexbox */
+
 html {
   box-sizing: border-box;
 }
@@ -30,7 +30,6 @@ a.button {
   border-radius:4px;
 }
 
-
 .app-wrap {
   max-width:540px;
   height: 90vh;
@@ -40,7 +39,6 @@ a.button {
   border-radius:10px;
   box-shadow:0 0 50px  rgba(0,0,0,0.3);
 }
-
 
 .content {
   padding:20px;
@@ -54,7 +52,6 @@ a.button {
   float:left;
   margin-right: 10px;
 }
-
 
 .icon-bar a {
   text-align: center;
@@ -90,20 +87,6 @@ a.button {
   padding:1rem;
 }
 
-
-/*
-  Everything So far is Cosmetic styling
-
-  Flexbox + Important CSS Starts Here
-
-*/
-
-
-/*
-  Overall Layout
-*/
-
-
 .app-wrap {
   display:flex;
   flex-direction:column;
@@ -113,28 +96,16 @@ a.button {
   flex:1 1 auto;
 }
 
-/*
-  Header
-*/
-
 .app-header {
   display:flex;
   align-items:center;
   justify-content:space-between;
 }
 
-/*
-  Content
-*/
-
 .content {
   overflow-y:scroll;
   -webkit-overflow-scrolling:touch;
 }
-
-/*
-  Icon Bar
-*/
 
 .icon-bar {
   display:flex;
@@ -144,7 +115,6 @@ a.button {
   flex:1;
 }
 
-/* Laboratory additions: reset, Google font, tokens, visible focus. */
 :root{--exercise-bg-start:#2376ae;--exercise-bg-end:#c16ecf;--exercise-accent:#f0cb45;--exercise-ink:#222;--exercise-space:20px}
 body{font-family:"Open Sans",sans-serif;background-image:linear-gradient(260deg,var(--exercise-bg-start),var(--exercise-bg-end))}
 
