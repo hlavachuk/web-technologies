@@ -1,16 +1,8 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
-html, body, h1, h2, h3, p, figure, ul {
+body {
   margin: 0;
-  padding: 0;
-}
-img {
-  display: block;
-  max-width: 100%;
-}
-button {
-  font: inherit;
 }
 :root {
   --page-space: 8px;
@@ -56,9 +48,6 @@ body {
 }
 .block:nth-child(n+11):nth-child(-n+16) {
   grid-column: span 2;
-}
-.block:nth-child(n+17) {
-  grid-column: span 1;
 }
 @media (max-width: 576px) {
   :root {
